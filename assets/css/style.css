@@ -24,6 +24,7 @@ body{
     background: transparent;
     border-radius: 3px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+margin-right: 20px;
 }
 
 .relogio div{
@@ -50,4 +51,64 @@ letter-spacing: 3px;
 }
 .relogio span.tempo{
     font-size: 12px;
+}
+
+
+/* Relógio Analogico */
+
+.relogio-ponteiro{
+    background-color: #2d2f41;
+    position: relative;
+    width: 460px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 5px 25px rgba(14, 21, 37, .8);
+}
+.relogio-ponteiro ul{
+    list-style: none;
+
+}
+.horas-container{
+    width: 460px;
+}
+
+.hora-numero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hora-numero li{
+position: absolute;
+height: 100%;
+top:0 ;
+}
+
+.hora-numero .num{
+color: #cee0f6;
+font-size: 1.6em;
+font-weight: 400;
+margin: 10px;
+}
+
+.hora-numero li:nth-child(1){
+transform: rotate(90deg);
+}
+.hora-numero li:nth-child(2){
+transform: rotate(180deg);
+}
+.hora-numero li:nth-child(3){
+transform: rotate(270deg);
+}
+.hora-numero li:nth-child(1) .num{
+transform: rotate(-90deg);
+}
+.hora-numero li:nth-child(2) .num{
+transform: rotate(-180deg);
+}
+.hora-numero li:nth-child(3) .num{
+transform: rotate(-270deg);
 }
