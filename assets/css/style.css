@@ -162,3 +162,63 @@ transform: rotate(300deg);
 .mark-hora li:nth-child(8){
 transform: rotate(330deg);
 }
+
+
+.linha-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha-media .linha{
+    background-color: #cee0f6;
+    width: 1px;
+    height: 140px;
+    opacity: 0.2;
+    margin-top: 55px;
+
+}
+.linha-media li{
+    position: absolute;
+    height: 100%;
+top: 0 ;
+}
+
+.linha-media li:nth-child(1){
+transform: rotate(90deg);
+}
+
+.linha-media li:nth-child(2){
+transform: rotate(180deg);
+}
+.linha-media li:nth-child(3){
+transform: rotate(270deg);
+}
+
+.hand-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        background-color: #cee0f6;
+}
+
+.hand{
+    position: absolute;
+
+}
+.hr-hand{
+    width: 12px;
+    height: 280px;
+    
+}
+.hr-hand:before{
+content: "";
+position: absolute;
+width: 100%;
+height: 140px;
+background: linear-gradient(180deg,#634dff, #5fd4ff) ;
+border-radius: 20px;
+box-shadow: 0 0 15px rgba(2, 2, 2, 0.5);
+
+}
