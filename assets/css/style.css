@@ -70,12 +70,22 @@ letter-spacing: 3px;
 
 .relogio-ponteiro::before{
     z-index: 000;
-    content: "Ponteiro";
+    content: "Relógio";
     position: absolute;
     color: #cee0f6;
     font-size: 5.5em;
-    font-weight: 700;
+    font-weight:700;
     opacity: 0.07;
+    
+}
+.relogio-ponteiro:after{
+    content: "Analógico";
+    position: absolute;
+    color: #cee0f6;
+    font-size: 1.2em;
+    font-weight: 300;
+    opacity: 0.12;
+    transform: translate(140px, 55px);
 }
 
 .relogio-ponteiro ul{
@@ -222,7 +232,7 @@ transform: rotate(270deg);
 .hr-hand{
     width: 12px;
     height: 280px;
-    transform: rotate(240deg);
+   
 }
 .hr-hand:before{
 content: "";
@@ -237,7 +247,7 @@ box-shadow: 0 0 15px rgba(2, 2, 2, 0.5);
 .min-hand{
     width: 8px;
     height: 320px;
-    transform: rotate(30deg);
+    
     
 }
 .min-hand:before{
@@ -253,7 +263,7 @@ box-shadow: 0 0 15px rgba(2, 2, 2, 0.5);
 .sec-hand{
     width: 5px;
     height: 335px;
-    transform: rotate(90deg);
+   
     
 }
 .sec-hand:before{
@@ -271,8 +281,8 @@ box-shadow: 0 0 15px rgba(2, 2, 2, 0.5);
     z-index: 999;
     position: absolute;
     background-color: #cee0f6;
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     border-radius:50%;
     border: 7px solid #2d2f41;
 }
